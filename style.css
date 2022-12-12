@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'norsebold';
+  src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+    url('fonts/norse-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  background-color: rgb(226, 32, 32);
+  background-image: url(pic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  width: 45%;
+}
+
+.logo {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 140px;
+  padding: 1rem;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.logo h1 {
+  font-family: 'norsebold';
+  font-size: 80px;
+}
+
+.right {
+  background-color: #ebebeb;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.top {
+  padding: 60px 0 40px 40px;
+  font-weight: bold;
+  width: 75%;
+}
+
+.top div {
+  margin-bottom: 20px;
+}
+
+.form {
+  background-color: white;
+  box-shadow: 0 3px 10px black;
+  padding: 20px 40px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.form h2 {
+  margin-bottom: 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form-row {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input {
+  background-color: #ffffff;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  width: 80%;
+  padding: 7px;
+}
+
+.form-row input:invalid {
+  border-color: #ff0000;
+}
+
+.form-row input:focus {
+  outline: none !important;
+  border: 1px solid #5995da;
+  box-shadow: 0 0 10px #719ece;
+}
+
+.form-row label {
+  margin-bottom: 5px;
+}
+
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #ffffff;
+  background-color: #5995da;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 10px 40px;
+  cursor: pointer;
+
+  width: 90%;
+}
+
+.form-row button:hover {
+  background-color: #76aeed;
+}
+
+.form-row button:active {
+  background-color: #407fc7;
+}
+
+.bottom {
+  margin: 20px;
+}
+
+.login {
+  text-decoration: none;
+  color: rgb(18, 87, 18);
+}
